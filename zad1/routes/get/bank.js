@@ -1,3 +1,5 @@
+const connection = require("../../connection") 
+
 module.exports = function(app){
     app.get('/bank/:bank_id', (req, res) => {
         const { bank_id } = req.params;

@@ -1,3 +1,4 @@
+const connection = require("../../connection") 
 module.exports = function(app){
     app.delete('/person/:person_id', (req, res) => {
         const { person_id } = req.params;

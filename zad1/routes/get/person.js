@@ -1,3 +1,5 @@
+const connection = require("../../connection") 
+
 module.exports = function(app){
     app.get('/person/:person_id', (req, res) => {
         const { person_id } = req.params;

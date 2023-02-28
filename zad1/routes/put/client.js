@@ -1,3 +1,5 @@
+const connection = require("../../connection") 
+
 module.exports = function(app){
     app.put('/client/:client_id', (req, res) => {
         const { client_name, client_email, client_phone } = req.body;

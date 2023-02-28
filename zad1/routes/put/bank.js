@@ -1,3 +1,5 @@
+const connection = require("../../connection") 
+
 module.exports = function(app){
     app.put('/bank/:bank_id', (req, res) => {
         const { bank_name, bank_address } = req.body;

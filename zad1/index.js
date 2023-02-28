@@ -1,13 +1,14 @@
 const express = require("express");
 const app = express();
 const path = require("path")
+const cors = require('cors');
 
 
 
 app.set("trust proxy", true);
 app.use(express.static(path.join(__dirname, "public")));
 app.use(express.json());
-
+app.use(cors());
 
 //get Read
 require("./routes/get/person")(app)

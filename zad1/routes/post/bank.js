@@ -1,3 +1,5 @@
+const connection = require("../../connection") 
+
 module.exports = function(app){
     app.post('/bank', (req, res) => {
         const { bank_name, bank_address } = req.body;
