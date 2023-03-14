@@ -17,7 +17,6 @@ function PersonPost() {
     })
     .then(response => {
       console.log(response);
-      // tu można zaktualizować stan aplikacji
     })
     .catch(error => {
       console.log(error);
