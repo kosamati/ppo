@@ -15,6 +15,7 @@ require("./routes/get/person")(app)
 require("./routes/get/bank")(app)
 require("./routes/get/account")(app)
 require("./routes/get/client")(app)
+require("./routes/get/personList")(app)
 
 //delete 
 require("./routes/delete/person")(app)
