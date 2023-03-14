@@ -5,7 +5,7 @@ function ClientView(props) {
   const [client, setClient] = useState(null);
 
   useEffect(() => {
-    axios.get(`/client/${props.clientId}`)
+    axios.get(`http://localhost:2137/client/${props.clientId}`)
       .then(response => {
         setClient(response.data[0]);
       })
@@ -20,9 +20,9 @@ function ClientView(props) {
 
   return (
     <div>
-      <h2>{client.first_name} {client.last_name}</h2>
-      <p>Date of birth: {client.date_of_birth}</p>
-      <p>Address: {client.address}</p>
+      <h2>Client ID {client.client_id}</h2>
+      <p>Bank: {client.bank_id}</p>
+      <p>Person: {client.person_id}</p>
     </div>
   );
 }
