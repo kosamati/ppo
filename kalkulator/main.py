@@ -62,6 +62,4 @@ class Calculator:
 
 c1 = Calculator()
 while True:
-    
-
     c1.parse(f'{input("Napisz operację ")} ')
